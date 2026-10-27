@@ -1,0 +1,23 @@
+{
+  "title": "Suno MV Studio",
+  "player": "Player",
+  "lyrics": "Lyrics",
+  "visualizer": "Visualizer",
+  "settings": "Settings",
+  "export": "Export",
+  "player_subtitle": "Music player",
+  "lyrics_subtitle": "Synchronized lyrics display",
+  "visualizer_subtitle": "Waveform visualization",
+  "settings_subtitle": "Application settings",
+  "export_subtitle": "Video export options",
+  "language": "Language",
+  "theme": "Theme",
+  "dark_mode": "Dark Mode",
+  "light_mode": "Light Mode",
+  "select_language": "Select Language",
+  "select_theme": "Select Theme",
+  "arabic": "Arabic",
+  "hebrew": "Hebrew",
+  "urdu": "Urdu",
+  "english": "English"
+}

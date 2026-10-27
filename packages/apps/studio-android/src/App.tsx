@@ -1,7 +1,6 @@
 import { LyricVisualizer } from "@suno-folia/lyric-core";
 import { useLyricalProgress } from "@suno-folia/lyric-core";
 import { parseLRC } from "@suno-folia/lyric-core";
-import { useLyricalProgress as useLyricalProgressHook } from "@suno-folia/lyric-core";
 import i18next from "i18next";
 import { useState } from "react";
 

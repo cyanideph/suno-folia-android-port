@@ -1,4 +1,7 @@
 {
   "name": "@suno-folia/studio-android",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "@suno-folia/lyric-core": "file: ../lyric-core"
+  }
 }

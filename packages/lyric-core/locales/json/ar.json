@@ -1,0 +1,23 @@
+{
+  "title": "استوديو سونو إم في",
+  "player": "مشغل",
+  "lyrics": "الكلمات",
+  "visualizer": "الvisualizer",
+  "settings": "الإعدادات",
+  "export": "تصدير",
+  "player_subtitle": "مشغل الموسيقى",
+  "lyrics_subtitle": "عرض الكلمات المتزامنة",
+  "visualizer_subtitle": "可视化 waveform",
+  "settings_subtitle": "إعدادات التطبيق",
+  "export_subtitle": "خيارات تصدير الفيديو",
+  "language": "اللغة",
+  "theme": "المظهر",
+  "dark_mode": "الوضع الليلي",
+  "light_mode": "الوضع الفاتح",
+  "select_language": "حدد اللغة",
+  "select_theme": "حدد المظهر",
+  "arabic": "العربية",
+  "hebrew": "العبرية",
+  "urdu": "الأردو",
+  "english": "الإنجليزية"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "سuno MV ستودیو",
+  "player": " پلیر ",
+  "lyrics": "اللک words",
+  "visualizer": "ovisualizer",
+  "settings": "settings",
+  "export": "eksport",
+  "player_subtitle": "music player",
+  "lyrics_subtitle": "synchronized lyrics display",
+  "visualizer_subtitle": "waveform visualization",
+  "settings_subtitle": "application settings",
+  "export_subtitle": "video export options",
+  "language": "language",
+  "theme": "theme",
+  "dark_mode": "dark mode",
+  "light_mode": "light mode",
+  "select_language": "select language",
+  "select_theme": "select theme",
+  "arabic": "arabic",
+  "hebrew": "hebrew",
+  "urdu": "urdu",
+  "english": "english"
+}

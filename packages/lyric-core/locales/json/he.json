@@ -1,0 +1,23 @@
+{
+  "title": "סטודיו סונו MV",
+  "player": "נגן",
+  "lyrics": "מילים",
+  "visualizer": "ויזואליזר",
+  "settings": "הגדרות",
+  "export": "ייצוא",
+  "player_subtitle": "נגן מוזיקה",
+  "lyrics_subtitle": "תצוגת מילים סינכרונית",
+  "visualizer_subtitle": "ויזואליזציה של waveform",
+  "settings_subtitle": "הגדרות האפליקציה",
+  "export_subtitle": "אפשרויות ייצוא וידאו",
+  "language": "שפה",
+  "theme": "עיצוב",
+  "dark_mode": "מצב כהה",
+  "light_mode": "מצב בהיר",
+  "select_language": "בחר שפה",
+  "select_theme": "בחר עיצוב",
+  "arabic": "ערבית",
+  "hebrew": "עברית",
+  "urdu": "ורדו",
+  "english": "אנגלית"
+}
