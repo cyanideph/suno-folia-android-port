@@ -29,29 +29,27 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Accept Android licenses
+      - name: Install Android SDK
         run: |
-          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
-
-      - name: Install Android SDK Command-line Tools
-        run: |
+          set -e
           ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-          mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools/latest"
-          cd "$ANDROID_SDK_ROOT/cmdline-tools/latest"
+          mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools"
+          cd "$ANDROID_SDK_ROOT/cmdline-tools"
           curl -o cmdline-tools.zip "https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip"
           unzip cmdline-tools.zip
           rm cmdline-tools.zip
-          yes | cmdline-tools/latest/bin/sdkmanager "platforms;android-33" "build-tools;33.0.2" 2>&1
-
-      - name: Setup ANDROID_HOME
-        run: |
-          echo "ANDROID_HOME=$HOME/Library/Android/sdk" >> $GITHUB_ENV
-          echo "ANDROID_CMDLINE_TOOLS=$ANDROID_SDK_ROOT/cmdline-tools/latest" >> $GITHUB_ENV
-
-      - name: Accept Android SDK licenses
-        run: |
-          $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager --licenses
-          $ANDROID_SDK_ROOT/platform-tools/bin/sdkmanager --licenses
+          # Find sdkmanager - the zip extracts to a versioned directory
+          CMDL_DIR=$(ls)
+          SDKMGR="$ANDROID_SDK_ROOT/cmdline-tools/$CMDL_DIR/bin/sdkmanager"
+          if [ ! -f "$SDKMGR" ]; then
+            echo "::error::sdkmanager not found at $SDKMGR"
+            exit 1
+          fi
+          chmod +x "$SDKMGR"
+          # Accept licenses
+          yes "$SDKMGR" --licenses 2>&1 || true
+          # Install platforms and build tools
+          "$SDKMGR" "platforms;android-33" "build-tools;33.0.2" 2>&1
 
       - name: Sync Capacitor Android
         run: npx cap sync
