@@ -1,0 +1,14 @@
+{
+  "title": "Suno MV Studio",
+  "editor": "Editor",
+  "player": "Player",
+  "lyrics": "Lyrics",
+  "export": "Export",
+  "settings": "Settings",
+  "backup": "Backup",
+  "restore": "Restore",
+  "dark": "Dark",
+  "light": "Light",
+  "rtl": "RTL",
+  "ltr": "LTR"
+}

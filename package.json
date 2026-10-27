@@ -1,0 +1,34 @@
+{
+  "name": "suno-folia-android-port",
+  "private": true,
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.6.2",
+    "framer-motion": "^11.18.2",
+    "i18next": "^6.1.2",
+    "mediabunny": "^1.62.1",
+    "music-metadata": "^12.3.2",
+    "pixi.js": "^8.22.0",
+    "postcss": "^8.5.32",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.3",
+    "three": "^0.186.1",
+    "twgl": "^7.0.3",
+    "typescript": "^5.8.2",
+    "vite": "^6.4.5",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0"
+  }
+}

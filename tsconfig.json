@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@suno-folia/lyric-core": ["packages/lyric-core/src"],
+      "@suno-folia/lyric-core/*": ["packages/lyric-core/src/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "include": ["packages", "apps", "android-plugins"],
+  "exclude": ["node_modules", ".git"]
+}
